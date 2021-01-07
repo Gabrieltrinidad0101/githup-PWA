@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background: #1FA2FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display:flex;
+    justify-content: center;
+}
+
+#button{
+    flex: 1 1 74%;
+    border-radius: 0%;
+}
+
+
+.cointener{
+    display: flex;
+    background: #1466b7  ;
+    width: 60vh;
+    height: 70vh;
+    margin-top: 5%;
+    border:#1466b7;
+    border-radius: 5%;
+    padding: 1%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: stretch;
+}
+
+
+#text{
+    flex: 1 1 100%;
+    font-size: 150%;
+    border: 0px;
+    outline: none;
+    background: rgb(16, 52, 153);
+    color:#0080ff;
+    border-radius: 0%;
+}
+
+input{
+    flex: 1 1 20%;
+    margin: 1%;
+    font-size: 100%;
+    border-radius: 10%;
+    outline: #003c78;
+    background: #4990d8;
+}
+
+@media screen and (max-width:768px){
+    .cointener{
+        margin-top:0;
+        padding: 0;
+        border-radius: 0;
+        height: 100vh;
+        width: 100vw;
+    }
+    
+}
+@media screen and (max-width:280px){
+    input{
+        margin: 1%;
+        min-height: 90px;
+        
+    }
+    #button{
+        flex: 1 1 70%;
+    }
+}
